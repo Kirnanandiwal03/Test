@@ -3,7 +3,7 @@ const mongoclient=require('mongoose')
 const Dotenv=require('dotenv')
 const app=express();
 Dotenv.config();
-const PORT=5577;
+const PORT=6677;
 
 mongoclient.connect(process.env.MONGOURL).then(()=>{
     console.log("Database connected successfully")
